@@ -1,0 +1,179 @@
+﻿.navbar .navbar-brand,
+.navbar .nav-link {
+    color: black;
+    font-weight: bold;
+}
+.navbar {
+    background-color: beige;
+}
+
+/* Màu nền be cho thanh điều hướng */
+.custom-beige {
+    background-color: #f5f5dc;
+}
+
+/* Màu chữ mặc định của các liên kết */
+.nav-link {
+    color: #333;
+}
+
+    /* Đổi màu chữ khi di chuột vào liên kết */
+    .nav-link:hover {
+        color: #ff6347; /* Màu cam nhạt khi di chuột vào */
+    }
+
+    /* Đổi màu khi di chuột vào liên kết active */
+    .nav-link.active:hover {
+        color: #ff6347;
+    }
+
+    /* Đổi màu khi di chuột vào liên kết disabled */
+    .nav-link.disabled:hover {
+        color: #ff6347 !important; /* Ghi đè kiểu mặc định của Bootstrap */
+        cursor: pointer; /* Thay đổi con trỏ để người dùng biết có hiệu ứng */
+    }
+footer {
+    background: #000000D9;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-xs-12 {
+    width: 100%;
+}
+.address_footer {
+    margin-top: 30px;
+}
+.col-xs-6 {
+    width: 50%;
+}
+.footer_title {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.footer_linklists {
+    padding: 0;
+    margin: 0;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+.footer_title {
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+    
+   
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #000; /* Màu chữ */
+    font-size: 20px; /* Kích thước chữ */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+   
+}
+.footer_linklists {
+    padding: 0;
+    margin: 0;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-xs-12 {
+    width: 100%;
+}
+.footer_itemlists {
+    padding: 0;
+    margin: 0;
+}
+    .footer_linklists a,
+    .footer_itemlists a {
+        color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+        text-decoration: none; /* Không gạch chân */
+    }
+
+        .footer_linklists a:hover,
+        .footer_itemlists a:hover {
+            text-decoration: underline; /* Gạch chân khi hover, nếu bạn muốn */
+        }
+
+
+
+
+#footer {
+    background-color: black; /* Màu nền đen */
+    color: white; /* Màu chữ trắng */
+    width: 100%; /* Chiều rộng 100% */
+    position: relative; /* Để footer có thể đặt ở vị trí chính xác */
+    bottom: 0; /* Đặt footer ở đáy */
+}
+
+.footer {
+    padding: 20px 0; /* Thêm một chút khoảng cách trên và dưới cho footer */
+}
+
+.footer_linklists a {
+    color: white; /* Màu chữ cho các liên kết */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+    .footer_linklists a:hover {
+        text-decoration: underline; /* Gạch chân khi di chuột qua */
+    }
+
+.footer_itemlists li {
+    color: white; /* Màu chữ cho các mục trong danh sách */
+}
+
+hr {
+    border-color: white; /* Màu của đường kẻ */
+    margin: 20px 0; /* Khoảng cách cho đường kẻ */
+}
+.menu_lists {
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo các mục xuống dòng trên màn hình nhỏ */
+    gap: 20px; /* Khoảng cách giữa các mục */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các mục */
+}
+
+.menu_item {
+    flex: 1 1 30%; /* Các mục chiếm 30% chiều rộng container */
+    max-width: 300px; /* Giới hạn độ rộng tối đa */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+    .menu_item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Làm tròn góc ảnh nếu muốn */
+    }
+
+.menu_item_info {
+    margin-top: 10px;
+    color: #000; /* Đặt màu chữ đen */
+}
+
+    .menu_item_info a {
+        color: #000; /* Đặt màu chữ đen cho liên kết */
+        text-decoration: none; /* Bỏ gạch chân ở liên kết */
+    }
+
+.price_product_item {
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px; /* Tạo khoảng cách giữa tên sản phẩm và giá */
+}
+
