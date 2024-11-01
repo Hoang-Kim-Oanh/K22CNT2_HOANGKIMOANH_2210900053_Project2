@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+}
+<main aria-labelledby="title">
+    <div class="breadcrumb py-2 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb breadcrumb-arrow" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+                            <a href="#" itemprop="item" class="text-dark">
+                                <span itemprop="name">Menu</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+                            <a href="#" itemprop="item" class="text-dark">
+                                <span itemprop="name">Cà Phê</span>
+                            </a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item active" aria-current="page">
+                            <a href="#" itemprop="item" class="text-dark">
+                                <span itemprop="name">Bạc Xỉu Lắc Sữa Yến Mạch</span>
+                            </a>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="productinfor" class="py-4 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div id="productCarousel" class="carousel slide" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="~/Content/img/bacxiudamvi.jpg" class="d-block w-100 rounded" alt="Product Image">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <div data-target="#productCarousel" data-slide-to="0" class="thumb active mx-1">
+                                <img src="~/Content/img/bacxiudamvi.jpg" class="img-thumbnail" width="60" alt="Thumbnail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin sản phẩm, giá và nút đặt hàng --> 
+                    <div class="inforr_product text-center mt-4">
+                        <h4 class="info_product_title">Bạc xỉu lắc yến mạch</h4>
+                        <div class="info_product_price my-2">
+                            <span class="price h4 text-danger">45.000đ</span>
+                            <del class="price_original text-muted ml-3">50.000đ</del>
+                        </div>
+                        <div class="product_to_cart mt-3">
+                            <a href="URL" target="_blank" class="btn btn-warning d-flex align-items-center justify-content-center">
+                                <i class="fa fa-truck mr-2"></i>
+                                <span>Đặt giao hàng tận nơi</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 product_content_bottom">
+                    <hr class="hidden-xs">
+                    <div>
+                        <h4 class="related_product_title">Mô tả sản phẩm</h4>
+                        <p class="mt-3">
+                            Ngày thêm rộn ràng với Bạc Xỉu Lắc Sữa Yến Mạch. Cà phê phin Robusta đượm hương “lắc tới bến” cùng sữa yến mạch sánh mịn và đá đập mát lạnh. Lắc trước rồi hớp, hớp trực tiếp từ nắp lại càng ngon.
+                            *Để giữ trọn vị, Bạc Xỉu Lắc luôn được phục vụ kèm đá với định lượng đá không đổi.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

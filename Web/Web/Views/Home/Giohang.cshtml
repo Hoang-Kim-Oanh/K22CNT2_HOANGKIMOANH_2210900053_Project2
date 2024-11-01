@@ -1,0 +1,235 @@
+﻿
+@{
+    ViewBag.Title = "Giohang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Giohang</h2>
+
+<main data-v-0abb232b>
+    <main data-v-d1bcb9c8 data-v-0abb232b>
+        <section data-v-d1bcb9c8  class="tch-box tch-box--checkout tch-box--checkout-custom">
+            <div data-v-d1bcb9c8 class="container-lg container-fluid custom-checkout">
+                <div data-v-d1bcb9c8 class="row justify-content-center">
+                    <div data-v-d1bcb9c8 class="col-12 col-lg-10">
+                        <div data-v-d1bcb9c8 class="tch-checkout-header">
+                            <h1   data-v-d1bcb9c8 class="text-center tch-checkout-title tch-checkout-title-custom mb-0">
+                                <span data-v-d1bcb9c8class="">
+                                    <i data-v-d1bcb9c8 aria-hidden="true" class="fa fa-file"></i>
+                                </span>
+                                <span data-v-d1bcb9c8  class="text "> Xác nhận đơn hàng </span>
+                            </h1>
+                        </div>
+                        <div data-v-d1bcb9c8  class="ml-lg--50 d-block">
+                            <div data-v-d1bcb9c8 class=" tch-checkout-box tch-checkout-box--delivery tch-checkout-border float-lg-left">
+                                <div data-v-d1bcb9c8 class="tch-checkout-custom-mobile d-flex justify-content-between">
+                                    <h4 data-v-d1bcb9c8  class=" tch-checkout-box__title" > Giao hàng</h4>
+                                    <p data-v-d1bcb9c8  data-toggle="modal"  data-target=" #search-modal" class=" tch-checkout-box__btn-outline" > Đổi Phương Thức </p>
+                                </div>
+                                <div data-v-d1bcb9c8 class="d-flex flex-row align-items-start tch-delivery-card tch-delivery-card--border">
+                                    <div data-v-d1bcb9c8 class="tch-delivery-card__image">
+                                        <img src="~/Content/img/giaohang.png" />
+                                    </div>
+                                    <div data-v-d1bcb9c8 data-toggle="modal" data-target="#abc" class="d-flex justify-content-between align-items-start tch-delivery-card__content ">
+                                        <div data-v-d1bcb9c8>
+                                            <h5 data-v-d1bcb9c8 class="tch-delivery-card__title mb-0"> Chùa Ngọc Hoàng</h5>
+                                            <p data-v-d1bcb9c8 class="tch-delivery-card__description mb-0">
+                                                CHÙA NGỌC HOÀNG, 73 Đ. Mai Thị Lựu, Đa Kao, Quận 1, Hồ Chí Minh 700000, Việt Nam
+                                            </p>
+                                        </div>
+                                        <span data-v-d1bcb9c8 class="icon mt-2">
+                                            <i  data-v-d1bcb9c8  aria-hidden="true" class="fa fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                               <div data-v-d1bcb9c8 class="d-flex flex-row align-items-start tch-delivery-card">
+                                   <div data-v-d1bcb9c8 class="tch-delivery-card__image"></div>
+                                   <div data-v-d1bcb9c8 data-toggle="modal" data-target="#delivery-time" class="d-flex justify-content-between align-items-start tch-delivery-card__content">
+                                       <div data-v-d1bcb9c8>
+                                           <h5 data-v-d1bcb9c8 class="tch-delivery-card__title mb-0"> Nhận hàng trong ngày 15-30 phút</h5>
+                                           <p data-v-d1bcb9c8 class="tch-delivery-card__description mb-0"> Vào lúc : Càng sớm càng tốt </p>
+
+                                       </div>
+                                       <span data-v-d1bcb9c8 class="icon mt-2">
+                                           <i data-v-d1bcb9c8 aria-hidden="true" class="fa fa-chevron-right"></i>
+                                       </span>
+                                   </div>
+                               </div>
+                                <div data-v-d1bcb9c8 class="form-group">
+                                    <input data-v-d1bcb9c8 type="text" id="name" autocomplete="off" placeholder="Tên người nhận" class="form-control tch-delivery__input" />
+                                    <div data-v-d1bcb9c8 class="err err-name"> Vui lòng nhập tên người nhận </div>
+                                </div>
+                                <div data-v-d1bcb9c8 class="form-group ">
+                                   <input  data-v-d1bcb9c8 type="text" id="phone" autocomplete="off" placeholder="Số điện thoại " class="form-control tch-delivery__input"/>
+                                    <div data-v-d1bcb9c8 class="err err-phone"> Vui lòng nhập số điện thoại người nhận </div>
+                                </div>
+                                <div data-v-d1bcb9c8 class="form-group mb-0 ">
+                                    <input data-v-d1bcb9c8 type="text" id="not" autocomplete="off" placeholder="Thêm hướng dẫn giao hàng" class="form-control tch-delivery__input" />
+                                </div>
+                            </div>
+                            <div data-v-d1bcb9c8 d-none tch-checkout-box tch-checkout-box--lg-shadowbox d-lg-block float-lg-right pb-0 pt-0 >
+                                <div data-v-d1bcb9c8 class="ptl-20">
+                                    <div data-v-d1bcb9c8 class="tch-checkout-box tch-checkout-box--list-ordered tch-checkout-border w-100">
+                                        <div data-v-d1bcb9c8 class="d-flex justify-content-between">
+                                            <h4 data-v-d1bcb9c8 class="tch-checkout-box__title mb-0"> Các món đã chọn</h4>
+                                            <a data-v-d1bcb9c8>
+                                                <p data-v-d1bcb9c8 class="tch-checkout-box__btn-outline"> Thêm món</p>
+                                            </a>
+                                        </div>
+                                        <div data-v-d1bcb9c8 data-target="modal" data-target="#cardModal" class="tch-order-card d-flex align-items-center justify-content-between">
+
+                                            <div data-v-d1bcb9c8 class="tch-order-card__left d-flex ">
+                                                <span data-v-d1bcb9c8 class="tch-order-card__icon d-flex align-items-center">
+                                                    <i data-v-d1bcb9c8 aria-hidden="true" class="fa fa-pen"></i>
+                                                </span>
+                                                <div data-v-d1bcb9c8 class="tch-order-card__content">
+                                                    <h5 data-v-d1bcb9c8 class=" tch-order-card__title mb-0"> 1 x Bạc Xỉu Lắc Caramel Muối</h5>
+                                                    <p data-v-d1bcb9c8 class="tch-order-card__description mb-0"> Vừa </p>
+                                                    <p data-v-d1bcb9c8 class="tch-order-delete-item"> Xóa </p>
+                                                </div>
+                                            </div>
+                                            <div data-v-d1bcb9c8 class="tch-order-card__right">
+                                                <p data-v-d1bcb9c8 class="tch-order-card__price mb-0"> 45.000 đ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-v-d1bcb9c8 class="tch-checkout-box tch-checkout-box--list-total tch-checkout-border w-100">
+                                        <div data-v-d1bcb9c8 class="mb--12">
+                                            <h4 data-v-d1bcb9c8 class="tch-checkout-box__title">"Tổng cộng"</h4>
+                                        </div>
+                                        <div data-v-d1bcb9c8 data-toggle="modal" data-target="#delivery-time" class="tch-order-card tch-order-card--border d-flex align-items-center justify-content-between">
+                                            <div data-v-d1bcb9c8 class=" tch-order-card__left d-flex">
+                                                <p data-v-d1bcb9c8 class="tch-order-card__text mb-0"> Thành tiền</p>
+                                            </div>
+                                            <div data-v-d1bcb9c8 class="tch-order-card__right">
+                                                <p data-v-d1bcb9c8 class="tch-order-card__price mb-0"> 45.000 đ </p>
+                                            </div>
+                                        </div>
+                                        <div data-v-d1bcb9c8 class="tch-order-card d-flex align-items-center justify-content-between">
+                                            <div data-v-d1bcb9c8 class="tch-order-card__left d-flex">
+                                                <p data-v-d1bcb9c8 class="tch-order-card__text mb-0"> Phí giao hàng </p>
+                                            </div>
+                                            <div data-v-d1bcb9c8 class="tch-order-card__right">
+                                                <p data-v-d1bcb9c8 class="tch-order-card__price mb-0"> 18.000 đ </p>
+                                            </div>
+                                        </div>
+                                        <div data-v-d1bcb9c8 class="tch-order-card tch-order-card--border d-flex align-items-center justify-content-between" style="margin-top: -25px;">
+                                            <div data-v-d1bcb9c8 class="tch-order-card__left d-flex">
+                                                <p data-v-d1bcb9c8 class="tch-order-card__text mb-0"> Bạn có mã Freeship trong mục Ưu đãi </p>
+                                            </div>
+                                            <div data-v-d1bcb9c8 class="tch-order-card__right price-discount">
+                                                <p data-v-d1bcb9c8 class="tch-order-card__price mb-0"> 0đ</p>
+                                            </div>
+                                        </div>
+                                        <div data-v-d1bcb9c8 data-toggle="modal" data-target="#sale-modal" class="tch-order-card d-flex align-items-center justify-content-between cursor-pointer">
+                                            <div data-v-d1bcb9c8 class="tch-order-card__left tch-order-tch-order-card__left-custom-custom" style="flex: 1 1 0%;">
+                                               <p data-v-d1bcb9c8 class="tch-order-card__text orange mb-0"> Khuyến mãi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-d1bcb9c8 class="tch-checkout-box tch-checkout-box--list-submited d-flex justify-content-between w-100 position-static">
+                                    <div data-v-d1bcb9c8>
+                                        <p data-v-d1bcb9c8 class="tch-order-card__text text-white mb-0"> Thành tien</p>
+                                        <p data-v-d1bcb9c8 class="tch-order-card__text text-white f-600 mb-0"> 63.000đ</p>
+                                    </div>
+                                    <button data-v-d1bcb9c8 type="button" class="btn btn--white text-orange btn--radius-100">Đặt hàng</button>
+                                </div>
+                            </div>
+                            <div data-v-d1bcb9c8 class="tch-checkout-box tch-checkout-box--list-method tch-checkout-border float-lg-left">
+                                <div data-v-d1bcb9c8 class="mb--12">
+                                    <h4 data-v-d1bcb9c8 class="tch-checkout-box__title mb-0 mb-0"> Phương thức thanh toán</h4>
+                                </div>
+                                <ul data-v-d1bcb9c8 class="tch-list-payment-method mb-0">
+                                    <li data-v-d1bcb9c8 class="tch-payment-method-item">
+                                        <div data-v-d1bcb9c8 class="custom-control custom-radio mb-0">
+                                            <input data-v-d1bcb9c8 type="radio" name="payment-method" id="COD" class="custom-control-input">
+                                            <label data-v-d1bcb9c8 for="COD" class="custom-control-label tch-custom-radio" style="padding-left: 6px;">
+                                                <span data-v-d1bcb9c8 class="icon ml-3 mr-2">
+                                                    <img "tí thêm ảnh tiền vào đây">
+
+                                                </span>
+                                                <span data-v-d1bcb9c8 class="text"> Tiền mặt</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li data-v-d1bcb9c8 class="tch-payment-method-item">
+                                        <div data-v-d1bcb9c8 class="custom-control custom-radio mb-0">
+                                            <input data-v-d1bcb9c8 type="radio" name="payment-method" id="COD" class="custom-control-input">
+                                            <label data-v-d1bcb9c8 for="COD" class="custom-control-label tch-custom-radio" style="padding-left: 6px;">
+                                                <span data-v-d1bcb9c8 class="icon ml-3 mr-2">
+                                                    <img "tí thêm ảnh momo vào đây">
+
+                                                </span>
+                                                <span data-v-d1bcb9c8 class="text"> Momo</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li data-v-d1bcb9c8 class="tch-payment-method-item">
+                                        <div data-v-d1bcb9c8 class="custom-control custom-radio mb-0">
+                                            <input data-v-d1bcb9c8 type="radio" name="payment-method" id="COD" class="custom-control-input">
+                                            <label data-v-d1bcb9c8 for="COD" class="custom-control-label tch-custom-radio" style="padding-left: 6px;">
+                                                <span data-v-d1bcb9c8 class="icon ml-3 mr-2">
+                                                    <img "tí thêm ảnh zalo pay vào đây">
+
+                                                </span>
+                                                <span data-v-d1bcb9c8 class="text"> Zalopay</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li data-v-d1bcb9c8 class="tch-payment-method-item">
+                                        <div data-v-d1bcb9c8 class="custom-control custom-radio mb-0">
+                                            <input data-v-d1bcb9c8 type="radio" name="payment-method" id="COD" class="custom-control-input">
+                                            <label data-v-d1bcb9c8 for="COD" class="custom-control-label tch-custom-radio" style="padding-left: 6px;">
+                                                <span data-v-d1bcb9c8 class="icon ml-3 mr-2">
+                                                    <img "tí thêm ảnh shoppe vào đây">
+
+                                                </span>
+                                                <span data-v-d1bcb9c8 class="text"> ShoppePay</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li data-v-d1bcb9c8 class="tch-payment-method-item">
+                                        <div data-v-d1bcb9c8 class="custom-control custom-radio mb-0">
+                                            <input data-v-d1bcb9c8 type="radio" name="payment-method" id="COD" class="custom-control-input">
+                                            <label data-v-d1bcb9c8 for="COD" class="custom-control-label tch-custom-radio" style="padding-left: 6px;">
+                                                <span data-v-d1bcb9c8 class="icon ml-3 mr-2">
+                                                    <img "tí thêm ảnh ngân hàng vào đây">
+
+                                                </span>
+                                                <span data-v-d1bcb9c8 class="text"> Ngân hàng</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div data-v-d1bcb9c8 class="policy">
+                                    <label data-v-d1bcb9c8 class="checkbox-button">
+                                        <input data-v-d1bcb9c8 checked="checked" disabled="disabled" type="checkbox" id="checkbox" name="choice1" class="checkbox-button__input">
+                                        <span data-v-d1bcb9c8 class="checkbox-button__control"></span>
+                                        <span data-v-d1bcb9c8 class="checkbox-button__label">
+                                            " Đồng ý với các "
+                                            <a>
+                                                điều khoản và điều kiện
+                                            </a>
+                                            " mua hàng của The Coffee Ori"
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div data-v-d1bcb9c8 class="tch-checkout-box tch-checkout-box--remove-card float-lg-right">
+                                <p data-v-d1bcb9c8 class="tch-checkout-box__text text-center mb-0">
+                                    <span data-v-d1bcb9c8 class="icon mr-2">
+                                        <i data-v-d1bcb9c8 aria-hidden="true" class="fa fa-trash"></i>
+                                    </span>
+                                    <span data-v-d1bcb9c8>Xóa đơn hàng</span>
+                                </p>
+                            </div>
+                            <div data-v-d1bcb9c8 class="d-none d-lg-block clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</main>

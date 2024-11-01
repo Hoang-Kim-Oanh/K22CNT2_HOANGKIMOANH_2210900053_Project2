@@ -188,30 +188,19 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\css\trangchu.css" />
-    <Content Include="Content\img\images %281%29.jpg" />
-    <Content Include="Content\img\images %282%29.jpg" />
-    <Content Include="Content\img\images %283%29.jpg" />
-    <Content Include="Content\img\images %284%29.jpg" />
-    <Content Include="Content\img\images %285%29.jpg" />
-    <Content Include="Content\img\images %286%29.jpg" />
-    <Content Include="Content\img\images %287%29.jpg" />
-    <Content Include="Content\img\images %288%29.jpg" />
-    <Content Include="Content\img\images %289%29.jpg" />
-    <Content Include="Content\img\images.jpg" />
-    <Content Include="Content\img\Screenshot 2024-10-28 160538.png" />
-    <Content Include="Content\img\tải xuống %281%29.jpg" />
-    <Content Include="Content\img\tải xuống %282%29.jpg" />
-    <Content Include="Content\img\tải xuống %283%29.jpg" />
-    <Content Include="Content\img\tải xuống %284%29.jpg" />
-    <Content Include="Content\img\tải xuống %285%29.jpg" />
-    <Content Include="Content\img\tải xuống.jpg" />
+    <Content Include="Content\img\bacxiudamvi.jpg" />
+    <Content Include="Content\img\caphelac.jpg" />
+    <Content Include="Content\img\giaohang.png" />
+    <Content Include="Content\img\hailencofi.jpg" />
+    <Content Include="Content\img\hanhnhan.jpg" />
+    <Content Include="Content\img\traxanhh.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Models\K22CNT2_HOANGKIMOANH_2210900053.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>K22CNT2_HOANGKIMOANH_2210900053.Context.cs</LastGenOutput>
       <DependentUpon>K22CNT2_HOANGKIMOANH_2210900053.edmx</DependentUpon>
+      <LastGenOutput>K22CNT2_HOANGKIMOANH_2210900053.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\K22CNT2_HOANGKIMOANH_2210900053.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -253,9 +242,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Home\Giohang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

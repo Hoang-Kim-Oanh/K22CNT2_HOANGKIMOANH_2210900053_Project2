@@ -68,6 +68,7 @@
           <Property Name="Gia" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="TrangThai" Type="bit" />
           <Property Name="SoLuong" Type="int" />
+          <Property Name="img" Type="nvarchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -209,6 +210,7 @@
           <Property Name="Gia" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="TrangThai" Type="Boolean" />
           <Property Name="SoLuong" Type="Int32" />
+          <Property Name="img" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CHI_TIET_DON_HANG" Relationship="Self.FK__CHI_TIET_D__MaSP__571DF1D5" FromRole="SAN_PHAM" ToRole="CHI_TIET_DON_HANG" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -350,6 +352,7 @@
                 <ScalarProperty Name="Gia" ColumnName="Gia" />
                 <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
                 <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="img" ColumnName="img" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

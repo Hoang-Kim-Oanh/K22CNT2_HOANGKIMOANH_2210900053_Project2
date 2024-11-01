@@ -1,80 +1,59 @@
-﻿@{
+﻿@model IEnumerable<Web.Models.SAN_PHAM>
+@{
     ViewBag.Title = "Home Page";
 }
 
 <main>
-   <div id="collection">
-       <div class="collection_menu_wrap">
-           <div class="container">
-               <div class="row">
-                   <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 border_right_before">
-                       <div class="cha block_menu_item loaded">
-                           <h3 class="block_menu_item_title">
-                               <span class="line_after_heading section_heading">"Cà Phê Highlight" </span>
-                           </h3>
-                           <div class="flex_wrap display_flex menu_lists menu_list_collection">
-                               <div class="menu_item ">
-                                   <div class="menu_item_image">
-                                       <a>
-                                           <img src="~/Content/img/tải xuống (2).jpg">
+    <div id="collection">
+        <div class="collection_menu_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 border_right_before">
+                        <div class="cha block_menu_item loaded">
+                            <h3 class="block_menu_item_title">
+                                <span class="line_after_heading section_heading">"Cà Phê Highlight"</span>
+                            </h3>
+                            <div class="flex_wrap display_flex menu_lists menu_list_collection">
+                                <div class="menu_item">
+                                    <div class="menu_item_image">
+                                        <a>
+                                            <img src="~/Content/img/traxanhh.jpeg">
+                                        </a>
+                                        <ul class="labels"></ul>
+                                    </div>
+                                    <div class="menu_item_info">
+                                        <h3>
+                                            <a>Trà Xanh</a>
+                                        </h3>
+                                        <div class="price_product_item">49.000đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                       </a>
-                                       <ul class="labels"></ul>
-                                   </div>
-                                   <div class="menu_item_info">
-                                       <h3>
-                                           <a> Trà Xanh</a>
-                                       </h3>
-                                       <div class="price_product_item"> 49.000đ</div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="cha block_menu_item loaded">
-                           <h3 class="block_menu_item_title">
-                               <span class="line_after_heading section_heading">Cà Phê Việt Nam</span>
-                           </h3>
-                           <div class="row menu_lists menu_list_collection">
-
-                               <div class="col-lg-4 col-md-6 col-sm-12 menu_item">
-                                   <a href="#">
-                                       <img src="~/Content/img/images (2).jpg" alt="Bạc xỉu lắc sữa yến mạch" class="img-fluid">
-                                   </a>
-                                   <div class="menu_item_info">
-                                       <h3><a href="#">Bạc xỉu lắc sữa yến mạch</a></h3>
-                                       <div class="price_product_item">45.000đ</div>
-                                   </div>
-                               </div>
-
-                               <div class="col-lg-4 col-md-6 col-sm-12 menu_item">
-                                   <a href="#">
-                                       <img src="~/Content/img/tải xuống (3).jpg" alt="Bạc xỉu lắc Caramenl muối" class="img-fluid">
-                                   </a>
-                                   <div class="menu_item_info">
-                                       <h3><a href="#">Bạc xỉu lắc Caramenl muối</a></h3>
-                                       <div class="price_product_item">45.000đ</div>
-                                   </div>
-                               </div>
-
-                               <div class="col-lg-4 col-md-6 col-sm-12 menu_item">
-                                   <a href="#">
-                                       <img src="~/Content/img/images (3).jpg" alt="Bạc Xỉu Lắc Hạnh Nhân Nướng" class="img-fluid">
-                                   </a>
-                                   <div class="menu_item_info">
-                                       <h3><a href="#">Bạc Xỉu Lắc Hạnh Nhân Nướng</a></h3>
-                                       <div class="price_product_item">45.000đ</div>
-                                   </div>
-                               </div>
-
-                           </div>
-                       </div>
-
-
-                   </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
+                        <div class="cha block_menu_item loaded">
+                            <h3 class="block_menu_item_title">
+                                <span class="line_after_heading section_heading">Cà Phê Việt Nam</span>
+                            </h3>
+                            <div class="row menu_lists menu_list_collection">
+                                <!-- Loop through each product in the model -->
+                                @foreach (var product in Model)
+                                {
+                                    <div class="col-lg-4 col-md-6 col-sm-12 menu_item">
+                                        <a href="/Home/Details">
+                                            <img src="~/Content/img/@product.img" alt="@product.TenSP" class="img-fluid">
+                                        </a>
+                                        <div class="menu_item_info">
+                                            <h3><a href="#">@product.TenSP</a></h3>
+                                            <div class="price_product_item">@string.Format("{0:n0}", product.Gia) đ</div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>

@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|d:\\k22cnt2-hoangkimoanh-2210900053-proiect2\\web\\web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|d:\\k22cnt2-hoangkimoanh-2210900053-proiect2\\web\\web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|d:\\k22cnt2-hoangkimoanh-2210900053-proiect2\\web\\web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\content\\css\\trangchu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\content\\css\\trangchu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\views\\home\\giohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\views\\home\\giohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{75678927-275B-41E5-8A29-FD3C0AD8A473}|Web\\Web.csproj|solutionrelative:web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +46,118 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "trangchu.css",
+              "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Content\\css\\trangchu.css",
+              "RelativeDocumentMoniker": "Web\\Content\\css\\trangchu.css",
+              "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Content\\css\\trangchu.css",
+              "RelativeToolTip": "Web\\Content\\css\\trangchu.css",
+              "ViewState": "AgIAALIAAAAAAAAAAAAcwL8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-30T18:55:59.893Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Giohang.cshtml",
+              "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Giohang.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Home\\Giohang.cshtml",
+              "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Giohang.cshtml",
+              "RelativeToolTip": "Web\\Views\\Home\\Giohang.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T05:29:58.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Menu.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Home\\Menu.cshtml",
+              "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Menu.cshtml",
+              "RelativeToolTip": "Web\\Views\\Home\\Menu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T20:10:35.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Home\\Details.cshtml",
+              "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Web\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T16:52:21.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA0wCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T16:52:08.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T07:52:35.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T07:52:35.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwDQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-30T07:52:29.895Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Web.config",
+              "RelativeDocumentMoniker": "Web\\Web.config",
+              "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Web.config",
+              "RelativeToolTip": "Web\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-31T05:11:44.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\K22CNT2-HOANGKIMOANH-2210900053-PROIECT2\\Web\\Web\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Web\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T20:15:33.82Z"
             }
           ]
         }
