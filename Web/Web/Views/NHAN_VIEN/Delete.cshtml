@@ -1,0 +1,55 @@
+﻿@model Web.Models.NHAN_VIEN
+
+@{
+    ViewBag.Title = "Xóa nhân viên";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-danger">Xóa nhân viên</h2>
+
+    <h3>Bạn có chắc chắn muốn xóa nhân viên này không?</h3>
+    <div>
+        <h4>Thông tin nhân viên</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Ho_ten)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Ho_ten)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Chuc_vu)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Chuc_vu)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Luong)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Luong)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Ngay_vao_lam)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Ngay_vao_lam)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions">
+                <input type="submit" value="Xóa" class="btn btn-danger" />
+                @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary ms-2" })
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,64 @@
+﻿@model Web.Models.SAN_PHAM
+
+@{
+    ViewBag.Title = "Xóa sản phẩm";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-danger">Xóa sản phẩm</h2>
+    <h3 class="text-muted">Bạn có chắc chắn muốn xóa sản phẩm này không?</h3>
+
+    <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title">Chi tiết sản phẩm</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.TenSP)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.TenSP)
+                </dd>
+
+                <dt class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.Gia)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Gia)
+                </dd>
+
+                <dt class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.TrangThai)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.TrangThai)
+                </dd>
+
+                <dt class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.SoLuong)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.SoLuong)
+                </dd>
+
+                <dt class="col-sm-3 font-weight-bold">
+                    @Html.DisplayNameFor(model => model.img)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.img)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions mt-4">
+            <input type="submit" value="Xóa" class="btn btn-danger" />
+            @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary ms-2" })
+        </div>
+    }
+</div>

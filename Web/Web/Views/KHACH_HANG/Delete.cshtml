@@ -1,0 +1,111 @@
+﻿@model Web.Models.KHACH_HANG
+
+@{
+    ViewBag.Title = "Xóa khách hàng";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-danger">Xóa khách hàng</h2>
+
+    <h3>Bạn có chắc chắn muốn xóa không?</h3>
+    <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title">Thông tin khách hàng</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Ho_ten)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Ho_ten)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Tai_khoan)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Tai_khoan)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Mat_khau)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Mat_khau)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Dia_chi)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Dia_chi)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Dien_thoai)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Dien_thoai)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Ngay_sinh)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Ngay_sinh)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Ngay_cap_nhat)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Ngay_cap_nhat)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Gioi_tinh)
+                </dt>
+                <dd class="col-sm-9">
+                    @{
+                        var gioiTinh = Model.Gioi_tinh == 1 ? "Nam" : "Nữ";
+                    }
+                    @gioiTinh
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Tich_diem)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Tich_diem)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Trang_thai)
+                </dt>
+                <dd class="col-sm-9">
+                    @{
+                        var trangThai = Model.Trang_thai == 1 ? "Hoạt động" : "Ngừng";
+                    }
+                    @trangThai
+                </dd>
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-actions">
+                    <input type="submit" value="Xóa" class="btn btn-danger" />
+                    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary" })
+                </div>
+            }
+        </div>
+    </div>
+</div>

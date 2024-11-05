@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Tạo Tài Khoản Mới";
+}
+
+<main class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-sm" style="min-height: 600px;">
+                <div class="card-header text-center">
+                    <h2 class="mb-3">Tạo Tài Khoản Mới</h2>
+                    <p class="text-muted">Đăng ký để tích lũy điểm thành viên và nhận được những ưu đãi tốt hơn!</p>
+                </div>
+                <div class="card-body">
+                    <form method="post" id="register-form" novalidate="novalidate">
+                        <div class="mb-3">
+                            <label class="form-label" for="Ho_ten">Họ và Tên</label>
+                            <input type="text" name="Ho_ten" id="Ho_ten" class="form-control" title="Họ và tên" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Tai_khoan">Tên Tài Khoản</label>
+                            <input type="text" name="Tai_khoan" id="Tai_khoan" class="form-control" title="Tên tài khoản" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Email">Email</label>
+                            <input type="email" name="Email" id="Email" class="form-control" title="Email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Dien_thoai">Số điện thoại</label>
+                            <input type="tel" name="Dien_thoai" id="Dien_thoai" class="form-control" title="Số điện thoại" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Gioi_tinh">Giới Tính</label>
+                            <select name="Gioi_tinh" id="Gioi_tinh" class="form-control" required>
+                                <option value="">Chọn giới tính</option>
+                                <option value="1">Nam</option>
+                                <option value="0">Nữ</option>
+                                <option value="3">Khác</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Ngay_sinh">Ngày Sinh</label>
+                            <input type="date" name="Ngay_sinh" id="Ngay_sinh" class="form-control" title="Ngày sinh" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Mat_khau">Mật Khẩu</label>
+                            <input type="password" name="Mat_khau" id="Mat_khau" class="form-control" title="Mật khẩu" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="confirm_password">Nhập Lại Mật Khẩu</label>
+                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" title="Nhập lại mật khẩu" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="Dia_chi">Địa Chỉ</label>
+                            <input type="text" name="Dia_chi" id="Dia_chi" class="form-control" title="Địa chỉ" required />
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success w-100" name="send" id="send">
+                                <span>Đăng Ký</span>
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <span>Đã có tài khoản? <a href="#">Đăng nhập</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

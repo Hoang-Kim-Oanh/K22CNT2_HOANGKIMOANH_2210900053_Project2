@@ -1,18 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="K22CNT2_HOANGKIMOANH_2210900053ModelStoreContainer" CdmEntityContainer="K22CNT2_HOANGKIMOANH_2210900053Entities">
-    <EntitySetMapping Name="BAN">
-      <EntityTypeMapping TypeName="K22CNT2_HOANGKIMOANH_2210900053Model.BAN">
-        <MappingFragment StoreEntitySet="BAN">
-          <ScalarProperty Name="Maban" ColumnName="Maban" />
-          <ScalarProperty Name="So_luong_cho" ColumnName="So_luong_cho" />
-          <ScalarProperty Name="Trang_thai" ColumnName="Trang_thai" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="CHI_TIET_DON_HANG">
       <EntityTypeMapping TypeName="K22CNT2_HOANGKIMOANH_2210900053Model.CHI_TIET_DON_HANG">
         <MappingFragment StoreEntitySet="CHI_TIET_DON_HANG">
+          <ScalarProperty Name="MACTDH" ColumnName="MACTDH" />
           <ScalarProperty Name="MaDH" ColumnName="MaDH" />
           <ScalarProperty Name="MaSP" ColumnName="MaSP" />
           <ScalarProperty Name="So_luong" ColumnName="So_luong" />

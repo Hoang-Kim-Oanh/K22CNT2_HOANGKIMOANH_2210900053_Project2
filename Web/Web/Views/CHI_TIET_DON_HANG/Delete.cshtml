@@ -1,0 +1,59 @@
+﻿@model Web.Models.CHI_TIET_DON_HANG
+
+@{
+    ViewBag.Title = "Xóa Chi Tiết Đơn Hàng";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<h2>Xóa Chi Tiết Đơn Hàng</h2>
+
+<div class="alert alert-warning">
+    <h4>Bạn có chắc chắn muốn xóa mục này?</h4>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h4>CHI_TIET_DON_HANG</h4>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.So_luong)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.So_luong)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Tong_tien)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Tong_tien)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.DON_HANG.MaDH)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.DON_HANG.MaDH)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.SAN_PHAM.TenSP)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.SAN_PHAM.TenSP)
+            </dd>
+        </dl>
+    </div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group mt-3">
+        <input type="submit" value="Xóa" class="btn btn-danger" />
+        @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary ml-2" })
+    </div>
+}

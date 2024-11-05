@@ -1,0 +1,45 @@
+﻿@model Web.Models.DON_HANG
+
+@{
+    ViewBag.Title = "Chi tiết Đơn Hàng";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Chi tiết Đơn Hàng</h2>
+    <hr />
+    <div class="card">
+        <div class="card-header">
+            Thông tin Đơn Hàng
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Ngaylap)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Ngaylap)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Tongtien)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Tongtien)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.KHACH_HANG.Ho_ten)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.KHACH_HANG.Ho_ten)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a class="btn btn-primary" href="@Url.Action("Edit", new { id = Model.MaDH })">Sửa</a>
+        <a class="btn btn-secondary" href="@Url.Action("Index")">Quay lại Danh sách</a>
+    </div>
+</div>

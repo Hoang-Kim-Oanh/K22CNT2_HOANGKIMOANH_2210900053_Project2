@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập";
+}
+
+<main class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-sm" style="height: 500px;">
+                <div class="card-header text-center">
+                    <h2 class="mb-3" style="line-height: 1.5;">Đăng nhập</h2>
+                    <p class="text-muted">Nếu bạn đã có tài khoản, hãy đăng nhập để tích lũy điểm thành viên và nhận được những ưu đãi tốt hơn!</p>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("dangnhap", "Home", FormMethod.Post))
+                    {
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Tên đăng nhập</label>
+                            <input type="text" name="username" id="username" class="form-control" required />
+                            @Html.ValidationMessage("username", "", new { @class = "text-danger" })
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Nhập mật khẩu</label>
+                            <input type="password" name="password" id="password" class="form-control" required />
+                            @Html.ValidationMessage("password", "", new { @class = "text-danger" })
+                        </div>
+                        <div class="mb-3 text-end">
+                            <a class="text-decoration-none" href="#">
+                                <span>Bạn quên mật khẩu?</span>
+                            </a>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success w-100">
+                                <span>Tiếp tục</span>
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <span>Chưa có tài khoản? <a href="/Home/dangky">Tạo tài khoản</a></span>
+                        </div>
+                    }
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

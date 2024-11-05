@@ -1,0 +1,51 @@
+﻿@model Web.Models.NHAN_VIEN
+
+@{
+    ViewBag.Title = "Chi tiết nhân viên";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-primary">Chi tiết nhân viên</h2>
+
+    <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title">Thông tin nhân viên</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Ho_ten)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Ho_ten)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Chuc_vu)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Chuc_vu)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Luong)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Luong)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Ngay_vao_lam)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Ngay_vao_lam)
+                </dd>
+            </dl>
+
+            <div class="form-actions">
+                @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaNV }, new { @class = "btn btn-primary me-2" }) |
+                @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary" })
+            </div>
+        </div>
+    </div>
+</div>

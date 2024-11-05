@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -46,10 +47,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -128,13 +129,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CHI_TIET_DON_HANGController.cs" />
+    <Compile Include="Controllers\DON_HANGController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KHACH_HANGController.cs" />
+    <Compile Include="Controllers\NHAN_VIENController.cs" />
+    <Compile Include="Controllers\SAN_PHAMController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BAN.cs">
-      <DependentUpon>K22CNT2_HOANGKIMOANH_2210900053.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\CartManager.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\CHI_TIET_DON_HANG.cs">
       <DependentUpon>K22CNT2_HOANGKIMOANH_2210900053.tt</DependentUpon>
     </Compile>
@@ -187,13 +192,34 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\css\layoutadmin.css" />
     <Content Include="Content\css\trangchu.css" />
+    <Content Include="Content\img\anhcofioingang.jpg" />
     <Content Include="Content\img\bacxiudamvi.jpg" />
+    <Content Include="Content\img\banh-ngot-Swedish-Princess.jpg" />
     <Content Include="Content\img\caphelac.jpg" />
+    <Content Include="Content\img\caphemuoi.jpg" />
+    <Content Include="Content\img\caphesuada.jpg" />
+    <Content Include="Content\img\caphesuanong.jpg" />
+    <Content Include="Content\img\Chesse-Cake-2.jpeg" />
     <Content Include="Content\img\giaohang.png" />
     <Content Include="Content\img\hailencofi.jpg" />
     <Content Include="Content\img\hanhnhan.jpg" />
+    <Content Include="Content\img\macaron.jpg" />
+    <Content Include="Content\img\Momo.png" />
+    <Content Include="Content\img\Pavlova.jpg" />
+    <Content Include="Content\img\sachertorte.jpg" />
+    <Content Include="Content\img\shppyPay.png" />
+    <Content Include="Content\img\thecofeori.jpg" />
+    <Content Include="Content\img\tiramisu.jpg" />
+    <Content Include="Content\img\tiền.jpg" />
+    <Content Include="Content\img\tradao.jpg" />
+    <Content Include="Content\img\trasuachanchau.jpg" />
+    <Content Include="Content\img\trasuachanchautrang.jpg" />
     <Content Include="Content\img\traxanhh.jpeg" />
+    <Content Include="Content\img\Victoria_Sponge.jpg" />
+    <Content Include="Content\img\visa.png" />
+    <Content Include="Content\img\zalopay.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -245,8 +271,35 @@
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Home\dangnhap.cshtml" />
     <Content Include="Views\Home\Giohang.cshtml" />
+    <Content Include="Views\Shared\_Layoutadmin.cshtml" />
+    <Content Include="Views\SAN_PHAM\Create.cshtml" />
+    <Content Include="Views\SAN_PHAM\Delete.cshtml" />
+    <Content Include="Views\SAN_PHAM\Details.cshtml" />
+    <Content Include="Views\SAN_PHAM\Edit.cshtml" />
+    <Content Include="Views\SAN_PHAM\Index.cshtml" />
+    <Content Include="Views\CHI_TIET_DON_HANG\Create.cshtml" />
+    <Content Include="Views\CHI_TIET_DON_HANG\Delete.cshtml" />
+    <Content Include="Views\CHI_TIET_DON_HANG\Details.cshtml" />
+    <Content Include="Views\CHI_TIET_DON_HANG\Edit.cshtml" />
+    <Content Include="Views\CHI_TIET_DON_HANG\Index.cshtml" />
+    <Content Include="Views\DON_HANG\Create.cshtml" />
+    <Content Include="Views\DON_HANG\Delete.cshtml" />
+    <Content Include="Views\DON_HANG\Details.cshtml" />
+    <Content Include="Views\DON_HANG\Edit.cshtml" />
+    <Content Include="Views\DON_HANG\Index.cshtml" />
+    <Content Include="Views\KHACH_HANG\Create.cshtml" />
+    <Content Include="Views\KHACH_HANG\Delete.cshtml" />
+    <Content Include="Views\KHACH_HANG\Details.cshtml" />
+    <Content Include="Views\KHACH_HANG\Edit.cshtml" />
+    <Content Include="Views\KHACH_HANG\Index.cshtml" />
+    <Content Include="Views\NHAN_VIEN\Create.cshtml" />
+    <Content Include="Views\NHAN_VIEN\Delete.cshtml" />
+    <Content Include="Views\NHAN_VIEN\Details.cshtml" />
+    <Content Include="Views\NHAN_VIEN\Edit.cshtml" />
+    <Content Include="Views\NHAN_VIEN\Index.cshtml" />
+    <Content Include="Views\Home\dangky.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -314,7 +367,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -4,16 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="db5094bebf364bfd96b7ce17e4fc921b" Name="Diagram1">
-        <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.BAN" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+      <Diagram DiagramId="d523dba435254cd29e38fae6fd12bbe9" Name="Diagram1">
         <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.CHI_TIET_DON_HANG" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.DON_HANG" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.KHACH_HANG" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.NHAN_VIEN" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.NHAN_VIEN" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.SAN_PHAM" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="K22CNT2_HOANGKIMOANH_2210900053Model.FK__CHI_TIET_D__MaDH__5629CD9C" ManuallyRouted="false" />
-        <AssociationConnector Association="K22CNT2_HOANGKIMOANH_2210900053Model.FK__CHI_TIET_D__MaSP__571DF1D5" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="K22CNT2_HOANGKIMOANH_2210900053Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="K22CNT2_HOANGKIMOANH_2210900053Model.FK_CHI_TIET_DON_HANG_DON_HANG" ManuallyRouted="false" />
+        <AssociationConnector Association="K22CNT2_HOANGKIMOANH_2210900053Model.FK_CHI_TIET_DON_HANG_SAN_PHAM" ManuallyRouted="false" />
         <AssociationConnector Association="K22CNT2_HOANGKIMOANH_2210900053Model.FK__DON_HANG__MaKH__534D60F1" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

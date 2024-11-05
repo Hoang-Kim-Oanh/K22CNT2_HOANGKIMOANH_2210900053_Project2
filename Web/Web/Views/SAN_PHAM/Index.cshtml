@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Web.Models.SAN_PHAM>
+
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<p>
+    @Html.ActionLink("Thêm sản phẩm mới", "Create", null, new { @class = "btn btn-primary mb-3" })
+</p>
+
+<table class="table table-hover table-bordered align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.TenSP)</th>
+            <th>@Html.DisplayNameFor(model => model.Gia)</th>
+            <th>@Html.DisplayNameFor(model => model.TrangThai)</th>
+            <th>@Html.DisplayNameFor(model => model.SoLuong)</th>
+            <th>@Html.DisplayNameFor(model => model.img)</th>
+            <th class="text-center">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.TenSP)</td>
+                <td>@Html.DisplayFor(modelItem => item.Gia)</td>
+                <td>@Html.DisplayFor(modelItem => item.TrangThai)</td>
+                <td>@Html.DisplayFor(modelItem => item.SoLuong)</td>
+                <td>
+                    <img src="~/Content//img/@item.img" alt="Ảnh sản phẩm" class="img-thumbnail" style="max-width: 100px;" />
+                </td>
+                <td class="text-center">
+                    <a class="btn btn-sm btn-warning me-1" href="@Url.Action("Edit", new { id = item.MaSP })">Sửa</a>
+                    <a class="btn btn-sm btn-info me-1" href="@Url.Action("Details", new { id = item.MaSP })">Chi tiết</a>
+                    <a class="btn btn-sm btn-danger" href="@Url.Action("Delete", new { id = item.MaSP })">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

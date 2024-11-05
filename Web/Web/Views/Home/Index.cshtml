@@ -2,6 +2,18 @@
 @{
     ViewBag.Title = "Home Page";
 }
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@if (TempData["LogoutMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["LogoutMessage"]
+    </div>
+}
 
 <main>
     <div id="collection">
@@ -36,11 +48,10 @@
                                 <span class="line_after_heading section_heading">Cà Phê Việt Nam</span>
                             </h3>
                             <div class="row menu_lists menu_list_collection">
-                                <!-- Loop through each product in the model -->
                                 @foreach (var product in Model)
                                 {
                                     <div class="col-lg-4 col-md-6 col-sm-12 menu_item">
-                                        <a href="/Home/Details">
+                                        <a href="@Url.Action("Details", "Home", new { id = product.MaSP })">
                                             <img src="~/Content/img/@product.img" alt="@product.TenSP" class="img-fluid">
                                         </a>
                                         <div class="menu_item_info">
@@ -50,7 +61,7 @@
                                     </div>
                                 }
                             </div>
-                        </div>   
+                        </div>
                     </div>
                 </div>
             </div>

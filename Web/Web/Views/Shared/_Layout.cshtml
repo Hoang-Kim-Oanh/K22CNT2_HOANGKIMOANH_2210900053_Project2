@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light custom-beige">
+    <nav class="navbar navbar-expand-lg navbar-light custom-beige custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">The COFFE Ori</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Cà phê</a>
                     </li>
@@ -41,28 +41,46 @@
                         <a class="nav-link" href="#">Tuyển dụng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Giỏ Hàng</a>
+                        <a class="nav-link" href="/Home/Giohang">Giỏ Hàng</a>
                     </li>
-
-
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    @if (Session["UserId"] != null && Session["UserName"] != null)
+                    {
+                        <li class="nav-item" style="font-size: 14px">
+                            <a href="/Home/dangnhap" class="nav-link text-dark">
+                                <i class="fas fa-user"></i> Welcome, @Session["UserName"]
+                            </a>
+                            <a class="nav-link text-dark" href="/Home/DangXuat">Đăng xuất</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a href="/Home/DangNhap" class="nav-link text-dark">
+                                <i class="fas fa-user" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
-
     </nav>
+
 
     <div class="container body-content">
         @RenderBody()
         <hr />
     </div>
-    <footer id="footer" style="background-color: black; color: white;">
+    <footer id="footer" style="background-color: #343a40; color: white; padding-top: 1rem;">
+        <!-- Consistent dark gray background -->
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 footer_col">
+                <div class="col-lg-3 col-md-3 col-sm-6 footer_col mb-3">
                     <div class="hotline_footer">
                         <p>
                             <i class="fa-solid fa-phone"></i>
-                            Đặt hàng: 0987987987
+                            Đặt hàng: <strong>0987987987</strong>
                         </p>
                         <p>
                             <i class="fa-solid fa-location-dot"></i>
@@ -78,37 +96,37 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 footer_col">
-                    <h3 class="footer_title">Giới thiệu</h3>
-                    <ul class="footer_linklists">
-                        <li><a href="" title="Về chúng tôi" style="color: white;">Về chúng tôi</a></li>
-                        <li><a href="https://localhost:44347" title="Sản Phẩm" style="color: white;">Sản Phẩm</a></li>
-                        <li><a href="" title="Khuyến mãi" style="color: white;">Khuyến mãi</a></li>
-                        <li><a href="" title="Chuyện Cà Phê" style="color: white;">Chuyện Cà Phê</a></li>
-                        <li><a href="" title="Cửa hàng" style="color: white;">Cửa hàng</a></li>
-                        <li><a href="" title="Tuyển dụng" style="color: white;">Tuyển Dụng</a></li>
+                <div class="col-lg-3 col-md-3 col-sm-6 footer_col mb-3">
+                    <h3 class="footer_title text-white">Giới thiệu</h3> <!-- Changed to text-white -->
+                    <ul class="list-unstyled footer_linklists">
+                        <li><a href="#" class="text-white">Về chúng tôi</a></li>
+                        <li><a href="https://localhost:44347" class="text-white">Sản Phẩm</a></li>
+                        <li><a href="#" class="text-white">Khuyến mãi</a></li>
+                        <li><a href="#" class="text-white">Chuyện Cà Phê</a></li>
+                        <li><a href="#" class="text-white">Cửa hàng</a></li>
+                        <li><a href="#" class="text-white">Tuyển dụng</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 footer_col">
-                    <h3 class="footer_title">Điều Khoản</h3>
-                    <ul class="footer_linklists list-unstyled">
-                        <li><a href="" title="Điều khoản sử dụng" style="color: white;">Điều khoản sử dụng</a></li>
-                        <li><a href="" title="Chính sách bảo mật thông tin" style="color: white;">Chính sách bảo mật thông tin</a></li>
-                        <li><a href="" title="Hướng dẫn xuất hóa đơn GTGT" style="color: white;">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                <div class="col-lg-3 col-md-3 col-sm-6 footer_col mb-3">
+                    <h3 class="footer_title text-white">Điều Khoản</h3> <!-- Changed to text-white -->
+                    <ul class="list-unstyled footer_linklists">
+                        <li><a href="#" class="text-white">Điều khoản sử dụng</a></li>
+                        <li><a href="#" class="text-white">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="#" class="text-white">Hướng dẫn xuất hóa đơn GTGT</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 footer_col">
-                    <hr style="border-color: white;">
+                <div class="col-12 footer_col">
+                    <hr class="my-4" style="border-color: white;">
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 footer_col">
-                    <ul class="footer_itemlists list-unstyled">
-                        <li style="color: white;">"Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN"</li>
-                        <li style="color: white;">"Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh. Điện thoại: (028) 7107 8079. Email: hi@thecoffeehouse.vn"</li>
-                        <li style="color: white;">© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</li>
+                <div class="col-lg-9 col-md-9 col-sm-12 footer_col">
+                    <ul class="list-unstyled footer_itemlists">
+                        <li class="text-white">"Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN"</li>
+                        <li class="text-white">"Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh. Điện thoại: (028) 7107 8079. Email: hi@thecoffeehouse.vn"</li>
+                        <li class="text-white">© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</li>
                     </ul>
                 </div>
             </div>

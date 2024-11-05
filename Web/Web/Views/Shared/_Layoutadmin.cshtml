@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body style="margin-top: 0;">
+    <div id="app" class="v-application theme--light">
+        <!-- Thanh điều hướng trên cùng -->
+        <header class="v-toolbar navbar navbar-expand-lg navbar-light shadow-sm position-fixed w-100" style="height: 75px; z-index: 1050; background-color: beige;">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-light rounded-circle me-3">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+
+                <div class="navbar-brand d-none d-sm-inline-block">
+                    <span>Bảng Điều Khiển</span>
+                </div>
+
+                <form class="d-flex ms-auto" role="search" style="max-width: 165px;">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <!-- Đổi màu nút thành viền đen -->
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+                <div class="navbar-nav ms-3 d-flex align-items-center">
+                    <a class="nav-link position-relative text-dark">
+                        <!-- Đổi màu icon thành màu đen -->
+                        <i class="fas fa-bell"></i>
+                        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle p-2">5</span>
+                    </a>
+                    <a class="nav-link text-dark">
+                        <!-- Đổi màu icon thành màu đen -->
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Thanh điều hướng bên trái -->
+        <!-- Thanh điều hướng bên trái -->
+        <nav class="bg-beige text-black vh-100 position-fixed" style="width: 260px; top: 75px; background-color: beige;">
+            <div class="d-flex flex-column align-items-center p-3 border-bottom">
+                <!-- Khung hình nền -->
+                <div class="bg-dark w-100 d-flex justify-content-center align-items-center" style="height: 150px; background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); background-position: center center;">
+                    <!-- Đặt kích thước ảnh để vừa với khung -->
+                    <img src="~/Content/img/anhcofioingang.jpg" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+
+                <div class="text-center mt-2">
+                    <img src="https://demos.creative-tim.com/vuetify-material-dashboard/favicon.ico" alt="Logo" class="rounded-circle mb-2" style="width: 40px; height: 40px;">
+                    <h5 class="mb-0">The COFFE Ori</h5>
+                </div>
+            </div>
+            <hr class="text-secondary" />
+
+            <!-- Navigation Links -->
+            <ul class="nav flex-column px-3">
+                <li class="nav-item mb-1">
+                    <a href="#" class="nav-link active text-primary">
+                        <i class="mdi mdi-view-dashboard me-2"></i>Bảng điều khiển
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="/SAN_PHAM/Index" class="nav-link text-black">
+                        <i class="mdi mdi-package-variant-closed me-2"></i>Sản Phẩm
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="/DON_HANG/Index" class="nav-link text-black">
+                        <i class="mdi mdi-cart me-2"></i>Đơn hàng
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="/CHI_TIET_DON_HANG/Index" class="nav-link text-black">
+                        <i class="mdi mdi-receipt me-2"></i>Chi tiết đơn hàng
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="/KHACH_HANG/Index" class="nav-link text-black">
+                        <i class="mdi mdi-account-group me-2"></i>Khách hàng
+                    </a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="/NHAN_VIEN/Index" class="nav-link text-black">
+                        <i class="mdi mdi-account-tie me-2"></i>Nhân viên
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <main style="padding-top: 100px; padding-left:260px">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

@@ -25,7 +25,6 @@ namespace Web.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<BAN> BAN { get; set; }
         public virtual DbSet<CHI_TIET_DON_HANG> CHI_TIET_DON_HANG { get; set; }
         public virtual DbSet<DON_HANG> DON_HANG { get; set; }
         public virtual DbSet<KHACH_HANG> KHACH_HANG { get; set; }
